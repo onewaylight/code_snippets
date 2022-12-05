@@ -5,7 +5,7 @@ var stringData = `[{"factor_desc":"타워크레인을 이용하여 자재를 인
 
 ## In Javascript
 ```js
-    const data = JSON.pare(stringData);
+    const data = JSON.parse(stringData);
 
     data.map((elm) => {
         console.log(elm["factor_desc"]);
@@ -43,12 +43,15 @@ MUI Code 소스 정리하는 과정에서 과도한 한라인으로의 변환을
 정확한 동작확인을 해가면서 할 필요가 있어 보인다.
 다시 검증하고 싶은 마음은......
 
+<br>
 
-```ts
 location은
+```ts
 const location = useLocation();
+```
 
 params는
+```ts
 interface MatchProps {
     username: 'Hotel' | 'gildong';
 }

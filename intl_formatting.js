@@ -1,8 +1,12 @@
+/*
+  Expression of 
+**/
 const views = 9744642;
 
 const formatter = new Intl.NumberFormat('en', { 
   notation: 'compact'
 });
+
 formatter.format(views);
 
 const formatter = new Intl.NumberFormat('en', { 

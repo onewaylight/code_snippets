@@ -1,11 +1,27 @@
+```ts
+  <nav>
+    { 
+      gameOver ? (
+        <GameOver />
+      ) : (
+        <>
+          <h1>PlayGame</h1>
+          <button>Play Game</button>
+        </>
+      )
+    }
+  </nav>
+```
 ```js
   return (
     <div>
-      { isRendered ? (
-        <UpdateButton onClick={handleUpdateClick} />
-      ) : (
-        <EditButton onClick={handleEditClick} />
-      )}
+      { 
+        isRendered ? (
+          <UpdateButton onClick={handleUpdateClick} />
+        ) : (
+          <EditButton onClick={handleEditClick} />
+        )
+      }
     </div>
   );
 ```
@@ -74,9 +90,10 @@
     const isLoggedIn = this.state.isLoggedIn;
     return (
       <div>
-        {isLoggedIn
-          ? <LogoutButton onClick={this.handleLogoutClick} />
-          : <LoginButton onClick={this.handleLoginClick} />
+        {
+          isLoggedIn 
+            ? <LogoutButton onClick={this.handleLogoutClick} />
+            : <LoginButton onClick={this.handleLoginClick} />
         }
       </div>
     );
