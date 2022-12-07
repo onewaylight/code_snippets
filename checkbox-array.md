@@ -32,7 +32,7 @@
 
 <br><br>
 
-# Select all checkbox
+## Select all checkbox
  
 ```ts
   <Checkbox
@@ -41,7 +41,7 @@
   />
 ```
 
-### items iteration
+## items iteration
   
   ```ts
   items.map((item, index) => (
