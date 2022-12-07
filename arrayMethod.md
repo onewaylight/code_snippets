@@ -1,4 +1,5 @@
-# map
+<b><h2 style="color:cyan;">.map </h2></b>
+
 ```js
 var officers = [
   { id: 20, name: 'Captain Piett' },
@@ -25,7 +26,7 @@ var officersIds = officers.map(function(officer) {
 const officerIds = offices.map( el => el.id);
 ```
 
-# reduce
+<b><h2 style="color:cyan">.reduce</h2></b>
 
 
 ```js
@@ -63,14 +64,17 @@ var pilots = [
   const totalYears = pilots.reduce(( acc, pilot) => acc + pilot.years, 0);
 ```
 
->> find oldest pilot
+<br>
+
+> find oldest pilot
 ```js
   var mostExpPilot = pilots.reduce(function(oldest, pilot) {
     return ( oldest.year || 0)  > pilot.year ? oldest : pilot;
   }, {});
 ```
 
-# filter
+<h2 style="color:cyan;"><b> .filter </h2>
+
 ```js
 var pilots = [
   {
@@ -110,8 +114,10 @@ var empire = pilots.filter(function (pilot) {
 const rebels = pilots.filter(pilot => pilot.faction === "Rebels");
 const empire = pilots.filter(pilot => pilot.faction === "Empire");
 ```
+<br>
 
-# merge together all ( .map(), .reduce, .filter)
+## merge together all ( .map(), .reduce, .filter)
+
 ```js
 var personnel = [
   {
