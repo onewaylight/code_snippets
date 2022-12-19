@@ -38,3 +38,4 @@ array.forEach((title, idx, arr) => {
   console.log(idx + '-' + title);
   console.log(arr);
 });
+```

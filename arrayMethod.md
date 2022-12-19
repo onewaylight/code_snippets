@@ -190,7 +190,7 @@ var totalJediScore = personnel
   .reduce(function (acc, score) {
     return acc + score;
   }, 0);
-  ```
+```
 
 ```js
 const totalJediScore = personnel
