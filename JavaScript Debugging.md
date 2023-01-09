@@ -61,13 +61,13 @@ console.groupEnd(); // notice that we have two groupEnd() calls at the end as we
 console.warn('This function will be deprecated in the next release');
 ```
 
-> <b> 6. Better error logging</b>
+> ## <b> 6. Better error logging</b>
 
 ```js
 console.error('Your code is broken, go back and fix it!');
 ```
 
-# 7. Custom console styling
+> ## <b>7. Custom console styling</b>
 
 ```js
 console.log('%c React ', 
@@ -75,7 +75,7 @@ console.log('%c React ',
             'Have fun using React!');
 ```
 
-# 8. Time the speed of functions
+> ## <b>8. Time the speed of functions</b>
 
 ```js
 let i = 0;
@@ -92,7 +92,7 @@ console.timeEnd("For loop");
 
 ```
 
-# 9. Better stack traces
+> ## <b>9. Better stack traces</b>
 
 ```js
 const sunil = { name: "Sunil", member: true, id: 134323 };
