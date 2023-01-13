@@ -6,11 +6,12 @@
 
   const handleChange = (index, checked) => {
    
-     if(select && !checked) setSelect(false)
+     if(select && !checked) 
+      setSelect(false);
 
      const itemRef = [...items];
 
-     itemRef[index].selected = checked
+     itemRef[index].selected = checked;
 
      setItems([...itemRef]);
   } 
@@ -50,7 +51,6 @@
        checked={item.selected}
        onChange={(_e, checked) => handleChange(index, checked)}  
       />
-
   ))
 ```
 

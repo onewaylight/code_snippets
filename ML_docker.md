@@ -53,15 +53,26 @@ $ docker commit container_id tensorflow/tensorflow:gpu-jupyter-pandas
 ```bash
 $ docker run --gpus all --rm -it -v databuf:/home/databuf tensorflow/tensorflow:latest-gpu-pandas bash
 
-$ docker run --gpus all --rm -it -v d:\Docker:/home/databuf tensorflow/tensorflow:latest-gpu-pandas bash
+$ docker run --gpus all -p 8888:8888 --rm -it -v d:\Docker:/home/databuf tensorflow/tensorflow:latest-gpu-pandas bash
 ```
+<br>
+
+> <h3 style="color:lightgray"><b>실제 사용중인 Command</h3>
+
+```
+$ docker run --gpus all -p 8888:8888 --rm -it -v d:\Docker:/home/databuf tensorflow/tensorflow:gpu-jupyter
+```
+<br>
 
 > ### bind multiple folders cmd usecase
 ```bash
 $ docker run -v /opt/rpms:/opt/rpms/ -v /export/centos6_1/app/logs:/export/centos6_1/app/logs -t -i centos6_1 /bin/bash
 ```
 
-
+> ### Jupyter Docker Stacks
+```bash
+$ docker run -it --rm -p 10000:8888 jupyter/scipy-notebook
+```
 
 <br>
 <hr>

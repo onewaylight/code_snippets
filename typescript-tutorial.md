@@ -10,3 +10,13 @@ let myNumber: number = 1;
         this.setState({text: e.currentTarget.value})
     }
 ```
+
+```ts
+function disp_details(id: number, name: string, mail_id?: string) {
+    console.log("IDL)
+}
+```
+
+- ## Object Destructuring
+- ## Nullish coalescing operator(??)
+
