@@ -1,14 +1,13 @@
 ```ts
-
-    export interface TodoInterface {
-        id: string;
-        name: string;
-        isCompleted: boolean;
-    }
+export interface TodoInterface {
+    id: string;
+    name: string;
+    isCompleted: boolean;
+}
 ```
 
 ```ts
-    const [todos, setTodos] = useState<TodoInterface []>([]);
+const [todos, setTodos] = useState<TodoInterface[]>([]);
 ```
 
 ## 🔭 Create
