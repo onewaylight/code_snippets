@@ -77,7 +77,7 @@ function handleTodoComplete(id: string) {
         
         const newCkStatus: ICheckedStatus[] = [...workerListCheckStatus];
         
-        newCkStatus.find ( el => el.fid === Numbre(index))!.status = event.target.checked;
+        newCkStatus.find ( el => el.fid === Number(index))!.status = event.target.checked;
         setWorkerListCheckStatus(newCkStatus);
     }
 ```
