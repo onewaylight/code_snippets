@@ -53,5 +53,7 @@
 > Type #2
 
 ```ts
-    setTodos(todos.filter((todo: TodoInterface) => todo.id !== id))
+    function handleTodoRemove(id: string) {
+        setTodos(todos.filter((todo: TodoInterface) => todo.id !== id));
+    }
 ```
