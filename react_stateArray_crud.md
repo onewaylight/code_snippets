@@ -67,3 +67,39 @@ function handleTodoComplete(id: string) {
     setTodos(newTodoState);
 }
 ```
+
+----
+
+## Use Case
+
+```ts
+    const handleWorkerCheck = ( event: ChangeEvent<HTMLInputElement>, index: string): void => {
+        
+        const newCkStatus: ICheckedStatus[] = [...workerListCheckStatus];
+        
+        newCkStatus.find ( el => el.fid === Numbre(index))!.status = event.target.checked;
+        setWorkerListCheckStatus(newCkStatus);
+    }
+```
+
+> Is this working? need to check.
+```js
+    setData ( data.map(item => item.id === index ? { ...item, someProp : "changed" } : item ));
+```
+
+```ts
+const handleDeleteWokerList = (): void => {
+
+    let memberList = [];
+
+    workerListCheckStatus.forEach(function(el) {
+        let ret = workMemberList.find ( mb => Number(mb.wp_member_id) === el.fid && el.status === false);
+        
+        if ( ret)
+            memberList.push(ret);
+    });
+
+    console.log(memberList);
+    setWorkMemberList(memberList);
+}
+```
