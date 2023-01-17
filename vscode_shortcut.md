@@ -38,4 +38,12 @@ Ctrl+Shift+Alt +PgUp/PgDn | <p style="color:cyan; font-size: 1.2em;">⇧⌥⌘ P
 
 <br>
 
+### <b>Useful Shortcut</b>
+
+Windows | Mac | Function
+--- | --- | ---
+Windows Key + . | <p style="color:cyan; font-size: 1.2em;">^⌘  Space | Emoji
+
+<br>
+
 [Kite Autocomplete Plugin for Visual Studio Code](https://github.com/kiteco/vscode-plugin)
