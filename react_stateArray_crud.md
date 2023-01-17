@@ -57,3 +57,14 @@
         setTodos(todos.filter((todo: TodoInterface) => todo.id !== id));
     }
 ```
+
+## 🍉 Appendix - Change status in interface
+```ts
+function handleTodoComplete(id: string) {
+    const newTodoComplete: TodoInterface[] = [...todos];
+
+    newTodoState.find((todo: TodoInterface) => todo.id === id)!.isCompleted =
+            !newTodoState.find((todo: TodoInterface) => todo.id === id)!.isCompleted;
+    setTodos(newTodoState);
+}
+```
