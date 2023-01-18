@@ -82,7 +82,7 @@ function handleTodoComplete(id: string) {
     }
 ```
 
-> Is this working? need to check.
+> Is this working? need to check. Maybe it seems be work.
 ```js
     setData ( data.map(item => item.id === index ? { ...item, someProp : "changed" } : item ));
 ```
@@ -101,5 +101,31 @@ const handleDeleteWokerList = (): void => {
 
     console.log(memberList);
     setWorkMemberList(memberList);
+}
+```
+
+## Use Case #2
+
+```ts
+interface FactorStructure {
+    id: number,
+    factor: string,
+    name: string,
+    code: string
+}
+
+const [factorLists, setFactorLists] = useState<FactorStructure[]>([]);
+const [factorList, setFactorList] = useState<FactorStructure>(null);
+
+setFactorList({ ...factorList, name: 'David' });
+setFactorList({ ...factorList, code: 'CD1234' });
+
+setFactorLists(factorLists => [...factorLists, factorList]);
+
+handleChange = ( event: React.ChangeEvent<HTMLInputElement>) => {
+    setFactorList({
+        ...factorList,
+        [event.target.name]: event.target.value
+    });
 }
 ```
