@@ -46,4 +46,10 @@ Windows Key + . | <p style="color:cyan; font-size: 1.2em;">^⌘  Space | Emoji
 
 <br>
 
+### <b>Remove unused import and declarations</b>>
+
+Windows | Mac | Function
+--- | --- | ----
+Alt+Shift+O | <p style="color:cyan; font-size: 1.2em;">⌥⇧+O</p> | Remove unused import and declarations
+
 [Kite Autocomplete Plugin for Visual Studio Code](https://github.com/kiteco/vscode-plugin)
