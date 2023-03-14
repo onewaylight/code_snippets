@@ -1,6 +1,6 @@
 # Checkbox Event handling examples
 
-```ts
+```js
   const [items, setItems] = useState<Asset[]>([]);
   const [select, setSelect] = useState(false)
 
@@ -35,7 +35,7 @@
 
 ## Select all checkbox
  
-```ts
+```js
   <Checkbox
     checked={select}
     onChange={(_e, checked) => handleChangeAll(checked)} 
@@ -44,7 +44,7 @@
 
 ## items iteration
   
-  ```ts
+  ```js
   items.map((item, index) => (
      <Checkbox
        key={item.data.id} or key={index} 

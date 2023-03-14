@@ -30,7 +30,7 @@ const [todos, setTodos] = useState<TodoInterface[]>([]);
 ```
 
 ## 🧄 Update
-```ts
+```js
     function handleTodoUpdate(event: React.ChangeEvent<HTMLInputElement>, id: string) {
         const newTodosState: TodoInterface [] = [...todos];
         newTodosState.find((todo: TodoInterface) => todo.id === id)!.name = event.target.value;
@@ -41,7 +41,7 @@ const [todos, setTodos] = useState<TodoInterface[]>([]);
 
 ## 🍎 Remove
 > Type #1
-```ts
+```js
     function handleTodoRemove(id: string) {
         const newTodosState: TodoInterface[] = todos.filter((todo: TodoInterface) => todo.id !== id);
 
@@ -51,14 +51,14 @@ const [todos, setTodos] = useState<TodoInterface[]>([]);
 
 > Type #2
 
-```ts
+```js
     function handleTodoRemove(id: string) {
         setTodos(todos.filter((todo: TodoInterface) => todo.id !== id));
     }
 ```
 
 ## 🍉 Appendix - Change status in interface
-```ts
+```js
 function handleTodoComplete(id: string) {
     const newTodoComplete: TodoInterface[] = [...todos];
 
@@ -72,7 +72,7 @@ function handleTodoComplete(id: string) {
 
 ## Use Case
 
-```ts
+```js
     const handleWorkerCheck = ( event: ChangeEvent<HTMLInputElement>, index: string): void => {
         
         const newCkStatus: ICheckedStatus[] = [...workerListCheckStatus];
@@ -106,7 +106,7 @@ const handleDeleteWokerList = (): void => {
 
 ## Use Case #2
 
-```ts
+```js
 interface FactorStructure {
     id: number,
     factor: string,

@@ -37,20 +37,9 @@ function App() {
     return (
         <div className="App">
             <div className="form">
-                <input 
-                    onChange={(e) => {
-                        setUser({ ...user, name: e.target.value });
-                    }}
-                />
-                <input 
-                    onChange{(e) +> {
-                        setUser({ ...user, age: e.target.value });
-                    }}
-                />
-                <input 
-                    onChange{(e) +> {
-                        setUser({ ...user, email: e.target.value });
-                    }}
+                <input onChange = { e => setUser({ ...user, name: e.target.value }) } />
+                <input onChange = {(e) => { setUser({ ...user, age: e.target.value }); }} />
+                <input onChange = {(e) => { setUser({ ...user, email: e.target.value }); }}
                 />
             </div>
         </div>
@@ -74,12 +63,12 @@ function App() {
                     }}
                 />
                 <input 
-                    onChange{(e) => {
+                    onChange={(e) => {
                         setAge(e.target.value);
                     }}
                 />
                 <input 
-                    onChange{(e) +> {
+                    onChange={(e) +> {
                         setEmail(e.target.value);
                     }}
                 />

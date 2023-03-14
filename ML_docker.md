@@ -71,7 +71,7 @@ $ docker run -v /opt/rpms:/opt/rpms/ -v /export/centos6_1/app/logs:/export/cento
 
 > ### Jupyter Docker Stacks
 ```bash
-$ docker run -it --rm -p 10000:8888 jupyter/scipy-notebook
+$ docker run -it --rm -p 8888:8888 jupyter/scipy-notebook
 ```
 
 <br>
