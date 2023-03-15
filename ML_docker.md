@@ -59,7 +59,7 @@ $ docker run --gpus all -p 8888:8888 --rm -it -v d:\Docker:/home/databuf tensorf
 
 > <h3 style="color:lightgray"><b>실제 사용중인 Command</h3>
 
-```
+```bash
 $ docker run --gpus all -p 8888:8888 --rm -it -v d:\Docker:/home/databuf tensorflow/tensorflow:gpu-jupyter
 ```
 <br>
@@ -74,12 +74,49 @@ $ docker run -v /opt/rpms:/opt/rpms/ -v /export/centos6_1/app/logs:/export/cento
 $ docker run -it --rm -p 8888:8888 jupyter/scipy-notebook
 ```
 
+> 실행중인 Docker의 bash 에 접속하기
+```bash
+# container id check
+$ docker ps
+
+# run bash
+$ docker exec -it [CONTAINER ID] bash
+```
 <br>
-<hr>
+
+> 작업했던 Docker image 저장 
+```bash
+# run container
+$ docker run --gpus all -p 8888:8888 --rm -it -v d:\Docker:/home/databuf tensorflow/tensorflow:gpu-jupyter
+
+# connect bash and then install new library
+$ docker exec -it 9cb4e47e1c42 /bin/bash
+
+# save new container image
+$ docker commit 9cb4e47e1c42 tensorflow/tensorflow:gpu-jupyter-v1.1
+
+# run new container  
+$ docker run --gpus all -p 8888:8888 --rm -it -v d:\Docker:/home/databuf tensorflow/tensorflow:gpu-jupyter-v1.1
+```
+<br>
+
+> 종료된 Container 다시 시작
+```bash
+# Check container id 
+$ docker ps -a
+
+# Container Restart
+$ docker container restart [CONTAINER ID]
+```
+
+
+<br>
+
 <br>
 
 <h3 style="color:#32EBE0;font-size:160%">References</h3>
-<hr>
+
+----
 <br>
 
 
