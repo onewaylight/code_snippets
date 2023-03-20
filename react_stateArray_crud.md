@@ -59,18 +59,18 @@ const [todos, setTodos] = useState<TodoInterface[]>([]);
 
 ## 🍉 Appendix - Change status in interface
 ```js
-function handleTodoComplete(id: string) {
-    const newTodoComplete: TodoInterface[] = [...todos];
+    function handleTodoComplete(id: string) {
+        const newTodoComplete: TodoInterface[] = [...todos];
 
-    newTodoState.find((todo: TodoInterface) => todo.id === id)!.isCompleted =
-            !newTodoState.find((todo: TodoInterface) => todo.id === id)!.isCompleted;
-    setTodos(newTodoState);
-}
+        newTodoState.find((todo: TodoInterface) => todo.id === id)!.isCompleted =
+                !newTodoState.find((todo: TodoInterface) => todo.id === id)!.isCompleted;
+        setTodos(newTodoState);
+    }
 ```
 
 ----
 
-## Use Case
+## Use Case #1
 
 ```js
     const handleWorkerCheck = ( event: ChangeEvent<HTMLInputElement>, index: string): void => {

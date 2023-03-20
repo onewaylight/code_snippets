@@ -74,7 +74,7 @@ $ docker run -v /opt/rpms:/opt/rpms/ -v /export/centos6_1/app/logs:/export/cento
 $ docker run -it --rm -p 8888:8888 jupyter/scipy-notebook
 ```
 
-> 실행중인 Docker의 bash 에 접속하기
+> <h3>실행중인 Docker의 bash 에 접속하기</h3>
 ```bash
 # container id check
 $ docker ps
@@ -84,7 +84,7 @@ $ docker exec -it [CONTAINER ID] bash
 ```
 <br>
 
-> 작업했던 Docker image 저장 
+> <h3>작업했던 Docker image 저장 </h3>
 ```bash
 # run container
 $ docker run --gpus all -p 8888:8888 --rm -it -v d:\Docker:/home/databuf tensorflow/tensorflow:gpu-jupyter
@@ -100,7 +100,8 @@ $ docker run --gpus all -p 8888:8888 --rm -it -v d:\Docker:/home/databuf tensorf
 ```
 <br>
 
-> 종료된 Container 다시 시작
+> <h3>종료된 Container 다시 시작</h3>
+> rm 옵션을 주지 않았을 경우 Container만 남아있게 된다. 이때 재시작을 하려면 이와 같이 하면 된다.
 ```bash
 # Check container id 
 $ docker ps -a

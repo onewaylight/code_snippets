@@ -1,4 +1,4 @@
-```ts
+```js
 export const updateEvent =
   (eventId: string, update: any): AppThunk =>
   async (dispatch) => {
