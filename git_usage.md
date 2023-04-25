@@ -22,3 +22,46 @@
 - 클론을 한 후 로컬로 처리한 후 원리포지토리에 PR하는 법
 
 Pull Request - 내가 작업한 내용을 가져가 주세요 요청
+
+<br>
+
+git remote url 변경 전
+```bash
+$ git remote -v 
+origin  https://github.com/tj/commander.js.git (fetch) 
+origin  https://github.com/tj/commander.js.git (push)
+```
+
+git remote push url 변경
+
+```bash
+$git remote set-url --push origin <원격지 저장소 주소>
+
+$git remote set-url --push origin https://github.com/shelljs/shelljs.git
+```
+ 
+
+결과
+
+```bash
+$ git remote -v
+origin  https://github.com/tj/commander.js.git (fetch)
+origin  https://github.com/shelljs/shelljs.git (push)
+```
+
+git remote push, fetch url 변경
+
+```bash
+$git remote set-url origin <원격지 저장소 주소>
+
+$git remote set-url origin https://github.com/shelljs/shelljs.git
+```
+ 
+
+```결과```
+
+```
+$ git remote -v
+origin  https://github.com/shelljs/shelljs.git (fetch)
+origin  https://github.com/shelljs/shelljs.git (push)
+```
