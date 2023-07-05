@@ -29,7 +29,7 @@ $ git config --unset user.email
 
 > github 에 repository 에 생성!
 
-```Settings => Developer settings => Personal access tokens => Generate new token```
+```Settings → Developer settings → Personal access tokens → Generate new token```
 
 > Personal access token => 
 ```___pta___```
