@@ -65,3 +65,10 @@ $ git remote -v
 origin  https://github.com/shelljs/shelljs.git (fetch)
 origin  https://github.com/shelljs/shelljs.git (push)
 ```
+
+### Github Private Repository Access with PAT
+```
+Settings > Developer settings > Personal access tokens > Generate new token
+```
+
+> git clone https://__[PAT]__@github.com/onewaylight/__[myrepository]__.git
