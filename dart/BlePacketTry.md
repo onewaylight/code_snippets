@@ -165,10 +165,6 @@ class _MyHomePageState extends State<MyHomePage> {
     connectionString = "Start Scaning";
 
     startScan();
-    // if ( FlutterBluePlus.isScanningNow == false) {
-    //   print('initState : $connectionString');
-    //FlutterBluePlus.startScan(timeout: const Duration(seconds: 15), androidUsesFineLocation: false);
-    // }
   }
 
 
