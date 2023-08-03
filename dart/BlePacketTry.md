@@ -1,10 +1,16 @@
-/*
- *  pubspec.yaml
- *    - flutter_blue_plus: ^1.12.9
- *    - permission_handler: ^10.2.0
- * Addd Bluetooth Permision in AndroidManifest.xml
- */
 
+```
+   pubspec.yaml
+     - flutter_blue_plus: ^1.12.9
+     - permission_handler: ^10.2.0
+```
+  
+```
+Add Bluetooth Permision in AndroidManifest.xml
+```
+> Please see flutter_blue_plus sites
+
+```dart
 import 'dart:async';
 import 'dart:io';
 import 'dart:math';
@@ -244,3 +250,4 @@ String prettyException(String prefix, dynamic e) {
   }
   return prefix + e.toString();
 }
+```
