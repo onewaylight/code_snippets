@@ -110,6 +110,22 @@ $ docker ps -a
 $ docker container restart [CONTAINER ID]
 ```
 
+> <h3>컨테이너 중지
+```bash
+$ docker stop [container id]
+```
+
+> <h3>컨테이너 시작
+
+```bash
+$ docker start [Container id]
+```
+
+> <h3>컨테이너 재시작
+
+```bash
+$ docker restart [container id]
+```
 
 <br>
 
