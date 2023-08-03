@@ -285,7 +285,7 @@ remote 저장소에 변경사항 반영
 <br> 
 
 
-<h2 style="color: yellow;">
+<h2 style="color: cyan">
 remote ==> local
 </h2>
  
@@ -296,7 +296,7 @@ local branch 및 remote branch 확인
 
  
 
-```$ git checkout -b sweetpotato origin/sweetpotato```
+```$ git checkout -b sweetpotato origin/jayoen```
 
 remote의 origin/jayoen branch와 이어지는 local sweetpotato branch 생성
 
