@@ -71,9 +71,13 @@ $ docker run -v /opt/rpms:/opt/rpms/ -v /export/centos6_1/app/logs:/export/cento
 
 > ### Jupyter Docker Stacks
 ```bash
-$ docker run -it --rm -p 8888:8888 jupyter/scipy-notebook
+$ docker run -it --rm -p 8888:8888 jupyter/scipy-notebook:latest
 ```
+or 
+```bash
+$ docker run -it --rm -p 8888:8888 jupyter/scipy-notebook:v1.2
 
+```
 > <h3>실행중인 Docker의 bash 에 접속하기</h3>
 ```bash
 # container id check
@@ -99,6 +103,12 @@ $ docker commit 9cb4e47e1c42 tensorflow/tensorflow:gpu-jupyter-v1.1
 $ docker run --gpus all -p 8888:8888 --rm -it -v d:\Docker:/home/databuf tensorflow/tensorflow:gpu-jupyter-v1.1
 ```
 <br>
+
+> Run Scikit ---
+
+```bash
+$ docker run -p 8888:8888 --rm -it -v D:\TensorFlow-Data:/home/jovyan/work jupyter/scipy-notebook:latest
+```
 
 > <h3>종료된 Container 다시 시작</h3>
 > rm 옵션을 주지 않았을 경우 Container만 남아있게 된다. 이때 재시작을 하려면 이와 같이 하면 된다.

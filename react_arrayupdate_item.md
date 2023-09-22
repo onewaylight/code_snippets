@@ -53,7 +53,7 @@ return (
 ```
 
 
-```javascript
+```ts
 
 setData(datas => ({
   ...data,
@@ -61,7 +61,7 @@ setData(datas => ({
 }))
 ```
 
-```javascript
+```ts
   const initial_data = [
     {
       id: 1,
